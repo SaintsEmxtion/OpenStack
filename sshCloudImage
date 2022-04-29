@@ -1,0 +1,6 @@
+ssh-keygen -t rsa -f cloud.key
+cp cloud.key.pub in openstack key pair
+eval "$(ssh-agent)"
+cp cloud.key.pub /home/user/.ssh/authorized_keys
+ssh-add cloud.key
+ssh -i cloud.key user@ip
