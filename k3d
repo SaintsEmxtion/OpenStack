@@ -1,0 +1,2 @@
+k3d cluster create multinode --agents 2 --servers 1 - создание кластера, состоящего из 1 мастер ноды и двух воркер нод
+
